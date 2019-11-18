@@ -6,8 +6,10 @@
     <div class="flex-ns mhn2-ns mb3">
       {{ range .products }}
       <div class="ph2-ns w-50-ns">
-        <img src="{{.image}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text}}</p>
+        <img src="{{.image}}" alt="" class="center db mb3" style="width: 240px;height: 240px;">
+        <span style="display:block;background-color: #f00;margin: auto; width: 50%;">
+          <a href="/products" class="btn raise">{{.text}}</a>
+        </span>
       </div>
       {{ end }}
     </div>
