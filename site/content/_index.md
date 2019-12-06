@@ -11,10 +11,13 @@ intro:
 products:
     - image: img/boodle.jpg
       text: "Boodle Packages"
+      product_url: "/boodles"
     - image: /img/noodles.jpg
       text: "Noodle Packages"
+      product_url: "/products"
     - image: /img/meals.jpg
       text: "Packed Meals"
+      product_url: "/products"
 values:
     heading: Our values
     text: Back in 2009, my sisters and I were blessed to start this kitchen with the help of our humble crew.  They made us believe that we can run the business and cater to the hungry customers. 
