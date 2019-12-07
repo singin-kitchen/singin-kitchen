@@ -3,20 +3,18 @@
 <div class="ph3 bg-off-white">
 	<div class="center mw6 pv3">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
 		{{ .Content }}
 
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
+		<div class="flex flex-wrap">
+			{{ range .Params.contact_entries }}
+				<div class="w-40 pa3 mr2">
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
+					<p>{{ .text | safeHTML }}</p>
 				</div>
 			{{ end }}
 		</div>
-
-		{{ partial "contact-form" . }}
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6540114904055!2d121.10104661477075!3d14.618775080550382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b91838eecfbf%3A0xb3d1f824e19231b2!2sSingin%20Kitchenette!5e0!3m2!1sen!2sph!4v1575690312835!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<!--	{{ partial "contact-form" . }} -->
 
 	</div>
 </div>
