@@ -1,7 +1,17 @@
 ---
-title: Our Coffee
+title: Our Products
 type: products
-image: /img/products-jumbotron.jpg
+products:
+    - image: img/boodle.jpg
+      text: "Boodle Packages"
+      product_url: "/boodles"
+    - image: /img/noodles.jpg
+      text: "Noodle Packages"
+      product_url: "/products"
+    - image: /img/meals.jpg
+      text: "Packed Meals"
+      product_url: "/products"
+image: /img/ordering_reminder.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
